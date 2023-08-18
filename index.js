@@ -12,7 +12,24 @@ var incomTask=document.getElementById('tod-list-record-survey2');//incomplete ta
 const checkboxes = document.querySelectorAll('input[name="taskList"]');
 var deleteAll=document.getElementById('tod-list-record-survey3');//delet all CT event
 var clearList=document.getElementById('task-histry-del');
-clearList.addEventListener('click',clearNotes);
+clearList.addEventListener('click',clearNotes1);
+//function to clear all the todo list items
+function clearNotes1(){
+    let notes = localStorage.getItem("todo-list-display");
+    if (notes == null) {
+        notesObj = [];
+        // notesObj1=[];
+    }
+    else {
+        notesObj = JSON.parse(notes);
+        // notesObj1 = JSON.parse(notes);
+        // console.log(notesObj1);
+    }
+    notesObj.forEach(function(index){
+        deleteNote(index);//delete function 1 called to delete all cT
+    })
+    showNotes();
+}
 
 
 
