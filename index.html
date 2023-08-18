@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action=""> -->
+    <input type="checkbox" name="chc" id="check1" value="List1">
+    <label for="List1">Phy</label>
+    <input type="checkbox" name="chc" id="check2" value="List1">
+    <label for="List1">chem</label>
+    <input type="checkbox" name="chc" id="check3" value="List1">
+    <label for="List1">Bio</label>
+    <input type="checkbox" name="chc" id="check4" value="List1">
+    <label for="List1">Maths</label>
+    <button id="sbmt">Submit</button>
+<!-- </form> -->
+
+<script>
+    var inp1=document.getElementById('check1');
+    var btn=document.getElementById('sbmt');
+    btn.addEventListener('click',function(){
+        if(check1.checked==true)
+        check1.checked=false;
+    })
+</script>
+</body>
+</html>

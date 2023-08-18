@@ -1,0 +1,182 @@
+
+/* global attributes */
+body {
+    background-image:linear-gradient(to right,cyan,pink,grey);
+}
+
+/* todo list outer container */
+#tod-list-cont {
+    width: 50vw;
+    height: 90vh;
+    /* background-color: darkgray; */
+    background-image:linear-gradient(to right,cyan,pink,grey);
+    border-radius: 7px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+
+/* todo list actual container for list and inputfield */
+#tod-list-cont-body {
+    position: absolute;
+    top: 20px;
+    left: 56px;
+    width: 80%;
+    height: 89%;
+    border: 1px solid black;
+    /* margin-left: 40px;
+    margin-top: inherit; */
+    border-radius: 10px;
+    background-color: white;
+    /* box-shadow: ; */
+    box-shadow: 5px 10px 8px #888888;
+
+}
+
+
+/* inputfield container */
+#tod-list-cont-body-listText {
+    width: 90%;
+    height: 30%;
+    background-color: red;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+
+/* inputfield attributes */
+#listType {
+    width: 90%;
+    height: 70px;
+    border: none;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 25px;
+    background-color: black;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: grey;
+}
+
+
+/* addlist item icon */
+#list-icon1 {
+    position: absolute;
+    left: 35px;
+    top: 42px;
+
+}
+/* add icon */
+#list-icon2 {
+    position: absolute;
+    right: 40px;
+    top: 42px;
+    visibility: hidden;
+    cursor: pointer;
+
+}
+
+
+/* completed and uncheck task icon field */
+#task-histry {
+    height: 30px;
+    width: 90%;
+    position: absolute;
+    top: 87px;
+    left: 32px;
+    /* background-color: black; */
+    display: inline-block
+}
+/* completed tasks icon */
+#task-histry-icon {
+    margin-left: 12px;
+    margin-top: 8px;
+    width: auto;
+    color: grey;
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#task-histry-del{
+    margin-left: 50px;
+    margin-top: 8px;
+    width: auto;
+    color: grey;
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* uncheck checked tasks */
+#task-histry-clear {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    margin-left: 100px;
+    width: auto;
+    color: grey;
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* all task display container  */
+#todo-list-display{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100px;
+    background-color: black;
+    margin: auto;
+     margin-top: 70px;
+     overflow: scroll;
+     visibility: visible;
+     color: white;
+    /* margin-left: 10px;  */
+}
+
+/* incomplete/completed task container */
+#todo-list-display1{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    margin: auto;
+     margin-top: 70px;
+     border: 2px solid grey;
+     overflow: scroll;
+     visibility: hidden;
+    /* margin-left: 10px;  */
+}
+
+/* todo list left completed record container */
+#tod-list-record{
+    width: 90%;
+    height: auto;
+    display: flex;
+    background-color: black;
+    position: relative;
+    margin: auto;
+    margin-top: 9px;
+}
+/* left task record */
+#tod-list-record-task{
+    width: auto;
+    margin-left: 10px;
+    color: grey;
+}
+/* all task/completed/incomplte tasks areacontainer */
+#tod-list-record-survey{
+    position: absolute;
+    right: 10px;
+    width: auto;
+    color: grey;
+}

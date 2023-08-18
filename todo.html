@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+    <link href="todo.css" rel="stylesheet">
+    </link>
+
+
+</head>
+
+<body>
+    <h1 style="text-align: center;color: grey; margin: 0px;">
+        To-Do List 
+    </h1>
+    <div id="tod-list-cont">
+        <div id="tod-list-cont-body">
+            <div class="tod-list-cont-body-listText">
+                 
+                <input type="text" name="input" id="listType" placeholder="Type yur to do list">
+                <i class="fa-solid fa-list fa-lg" style="color: #7d7f82;" id="list-icon1"></i>
+                <i class="fa-solid fa-square-plus fa-lg" style="color: #aeb0b2;" id="list-icon2"></i>
+                </input>
+            </div>
+            <hr style="width: 90%; position: absolute;top: 117px; left: 30px;">
+            <div id="task-histry">
+                <div id="task-histry-icon">
+                    <i class="fa-solid fa-check-double fa-lg" style="color: #b2b2b3;"></i>
+                    Completed Tasks
+                </div>
+                <div id="task-histry-del">
+                    Delete To-do list
+                </div>
+                <div id="task-histry-clear">
+                    Uncheck Task/s
+                </div>
+            </div>
+            <div id="todo-list-display">
+            </div>
+            <div id="todo-list-display1">
+            </div>
+            <hr style="width: 90%;">
+            <div id="tod-list-record">
+                <div id="tod-list-record-task">
+                    <span id="tod-list-record-num"></span><span>&nbsp;Task left</span>
+                </div>
+                <div id="tod-list-record-survey">
+                    <span id="tod-list-record-survey1" style="color: white !important; cursor: pointer; margin-right: 7px;">All</span>
+                    <span id="tod-list-record-survey2"  style="cursor: pointer;margin-right: 7px;">Incomplete</span>
+                    <span id="tod-list-record-survey3"  style="cursor: pointer;">Delete CT</span>
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+
+</html>
