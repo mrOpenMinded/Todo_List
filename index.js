@@ -264,7 +264,8 @@ function showNotes2() {
 
 
 //delete tasks user wanna delete
-function deleteNote(index) {
+function deleteNote(index,event) {
+   
     deleteNote2(index);//delete from completed task section to if tehy;re there also there
     console.log("deleting the note", index);
     let notes = localStorage.getItem("todo-list-display");
@@ -300,6 +301,7 @@ function deleteNote(index) {
     checkboxes.forEach((checkbox, i) => {
         checkbox.checked = checkboxStates[i];
     });
+    // event.preventDefault();
     showNotes();//show notes on display area of all tasks
     // showNotes1();
 
